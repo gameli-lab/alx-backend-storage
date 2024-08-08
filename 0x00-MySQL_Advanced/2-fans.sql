@@ -2,10 +2,10 @@
 --bands with most fans
 SELECT
 	origin,
-	SUM(nb_fans) AS total
+	SUM(fans) AS nb_fans
 FROM
 	bands
 GROUP BY
 	origin
 ORDER BY
-	total DESC;
+	nb_fans DESC;
